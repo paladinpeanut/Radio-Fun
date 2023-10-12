@@ -7,11 +7,14 @@
     <title>Second Page</title>
 </head>
 
-<body/>
+    <body/>
     <h3>Radio</h3>
 
-    <form>
-        <label for="choices">Select an option:</label><br>
+    <form id="form1">
+        
+        <button id="btn" onClick="myGo(this.form)">Power</button>
+
+    <label for="choices">Select an option:</label><br>
         <input type="radio" id="choice1" name="choices" value="option1">
         <label for="choice1">Option 1</label><br>
         <input type="radio" id="choice2" name="choices" value="option2">
@@ -23,14 +26,20 @@
         <input type="radio" id="choice5" name="choices" value="option5">
         <label for="choice5">Option 5</label><br><br>
 
-        <input type="submit" value="Submit">
-    </form>
+   </form>
 
     <script/>
-    // Each radio option is a station with a function called to play an audio file.
-function here
 
-</script>
+    // Each radio option is a station with a function called to play an audio file;
+no clue
+    
+// The power button sound effect;
+    const audio = new Audio("./media/power radio.wav");
+    function myGo(form) {
+        audio.play();
+        }
+
+    </script>
 
     </body>
 
